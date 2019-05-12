@@ -1,0 +1,42 @@
+<RelativeLayout
+    android:padding="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:text="Topic"
+        android:id="@+id/tv_name_topic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ProgressBar
+        android:progressDrawable="@drawable/custom_progress_bar"
+        android:id="@+id/pb_topic"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@+id/tv_name_topic" />
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_marginRight="2dp"
+        android:layout_below="@id/pb_topic"
+        android:layout_toLeftOf="@id/tv_last_time"
+        android:src="@drawable/ic_av_timer_black_24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="3dp"
+        android:layout_alignBaseline="@id/iv"
+        android:textSize="11sp"
+        android:paddingTop="2dp"
+        android:text="Never"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/pb_topic"
+        android:id="@+id/tv_last_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

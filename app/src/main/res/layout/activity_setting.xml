@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:tint="@color/colorPrimary"
+        app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+
+    <TextView
+        android:id="@+id/tv_topic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/iv_back"
+        android:padding="16dp"
+        android:text="Setting"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/iv_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:padding="16dp"
+        android:tint="@color/colorPrimary"
+        app:srcCompat="@drawable/ic_check_black_24dp" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_below="@id/iv_back"
+        android:background="#e9e9e9" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view1"
+        android:padding="8dp"
+        android:paddingStart="16dp"
+        android:text="Daily reminder"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold" />
+
+    <Switch
+        android:id="@+id/sw_reminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/tv_time"
+        android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/tv_enable_timer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_time"
+        android:padding="8dp"
+        android:paddingStart="16dp"
+        android:text="Enable reminder"
+        android:textColor="@color/colorTextBlack"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_pick_timer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/sw_reminder"
+        android:padding="8dp"
+        android:paddingStart="16dp"
+        android:text="00:00"
+        android:textColor="@color/colorTextBlack"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_below="@id/tv_pick_timer"
+        android:background="#e9e9e9" />
+
+    <TextView
+        android:id="@+id/tv_review"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view2"
+        android:padding="8dp"
+        android:paddingStart="16dp"
+        android:text="Review words"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold" />
+
+    <Switch
+        android:id="@+id/sw_review"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/tv_review"
+        android:padding="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_review"
+        android:padding="8dp"
+        android:paddingStart="16dp"
+        android:text="Enable review mode"
+        android:textColor="@color/colorTextBlack"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_below="@id/sw_review"
+        android:background="#e9e9e9" />
+
+    <ListView
+        android:id="@+id/lv_topics"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/view3"
+        android:choiceMode="multipleChoice"
+        android:divider="@null"/>
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#663344</color>
+    <color name="colorPrimary">#966474</color>
+    <color name="colorTextWhite">#ffffff</color>
+    <color name="colorTextBlack">#000000</color>
+    <color name="colorAccent">#6c3346</color>
+    <color name="colorPbNew">#05966474</color>
+    <color name="colorPbReview">#5e966474</color>
+    <color name="colorPbMaster">#966474</color>
+</resources>

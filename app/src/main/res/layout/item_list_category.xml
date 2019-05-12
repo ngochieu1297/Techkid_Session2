@@ -1,0 +1,57 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_category"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:cardBackgroundColor="@color/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_category"
+                android:textStyle="bold"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="bottom"
+                android:text="Category"
+                android:textColor="@color/colorTextWhite"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_category_des"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_category"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:lineSpacingExtra="3dp"
+                android:text="Contract, Marketing, Warranties, Business Planning, Conference"
+                android:textColor="#a2ffffff"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/iv_arrow"
+                app:srcCompat="@drawable/ic_keyboard_arrow_down_black_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="8dp" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
